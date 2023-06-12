@@ -1,0 +1,21 @@
+.input-wrapper {
+    position: relative;
+
+    .form-input {
+        width: 30rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        max-width: 100%;
+        background-color: var(--color-grey);
+    }
+
+    .input-label {
+        position: absolute;
+        left: 4rem;
+        top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+    }
+}

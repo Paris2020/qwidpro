@@ -1,0 +1,31 @@
+.header-banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //min-height: 40rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+
+    picture {
+        height: 30rem;
+
+        img {
+            height: 30rem;
+            border-radius: 4rem;
+        }
+    }
+}
+
+.header-content {
+    padding: 1rem 0;
+    max-width: 140rem;
+    
+    .actions {
+        width: 40rem;
+        margin: -7rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

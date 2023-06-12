@@ -1,0 +1,15 @@
+.content {
+    margin-top: 7rem;
+
+    .wrapper {
+        
+        section {
+            padding: 2rem 0;
+            border-bottom: .2rem solid var(--color-white);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
