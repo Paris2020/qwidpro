@@ -1,5 +1,7 @@
 <script setup>
   import { reactive } from "vue";
+  import { useStore } from 'vuex';
+
   import IconSymbols from "./components/global/IconSymbols.vue";
   import NavSection from "./components/sections/NavSection.vue";
   import BannerSection from "./components/sections/BannerSection.vue";
@@ -7,6 +9,8 @@
   import DetailsCard from "./components/global/DetailsCard.vue";
   import PortfolioCard from "./components/global/PortfolioCard.vue";
   import FooterSection from "./components/sections/FooterSection.vue";
+
+  const store = useStore();
 
   const state = reactive({
         profile: {
@@ -57,47 +61,7 @@
             ]
         },
         /* Will be mioved to separate file */
-        profiles: [
-            {
-                id: 0,
-                profileDetails: {
-                    name: "Cindy",
-                    surname: "Ndlovu",
-                    role: "Graphic Designer, Web Developer",
-                    description: "Website Developer, Frontend Developer, IT Professional"
-                },
-                activeProjects: 2,
-                completedProjects: 2,
-                teams: 3,
-                status: false
-            },
-            {
-                id: 1,
-                profileDetails: {
-                    name: "Teddy",
-                    surname: "Town",
-                    role: "Social Media Ambassador",
-                    description: "Social Campaigns, Social Marketing Content",
-                },
-                activeProjects: 5,
-                completedProjects: 3,
-                teams: 1,
-                status: true
-            },
-            {
-                id: 2,
-                profileDetails: {
-                    name: "Sandy",
-                    surname: "Michaels",
-                    role: "UX DesigneR",
-                    description: "User Experience of Apps and Web Applications",
-                },
-                activeProjects: 3,
-                completedProjects: 2,
-                teams: 1,
-                status: true
-            }
-        ]
+        
     })
 </script>
 
