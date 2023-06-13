@@ -80,14 +80,14 @@ h2 {
     font-size: 4rem;
     line-height: 3rem;
 	font-weight: var(--font-weight-bold);
-    color: var(--color-grey-headings);
+    color: var(--color-grey);
 }
 
 h3 {
     font-size: 2.2rem;
     line-height: 2rem;
 	font-weight: var(--font-weight-medium);
-    color: var(--color-grey-headings);
+    color: var(--color-grey);
 	margin-bottom: 1.5rem;
 }
 
@@ -95,21 +95,6 @@ p {
     font-size: 1.4rem;
     line-height: 1rem;
     color: var(--color-text);
-}
-
-.notice-block {
-	padding: 1rem 0;
-	background-color: var(--color-pink-strip);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	p {
-		color: var(--color-white);
-		text-transform: uppercase;
-		font-size: 1rem;
-		font-weight: var(--font-weight-medium);
-	}
 }
 
 .btn {
@@ -138,7 +123,7 @@ p {
 		text-transform: uppercase;
 		font-weight: var(--font-weight-bold);
 		color: var(--color-white);
-		background-color: var(--color-bg-footer);
+		background-color: var(--color-bg);
 	}
 
 	&.clear {

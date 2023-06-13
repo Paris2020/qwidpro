@@ -40,6 +40,11 @@
                     padding: 0 2rem;
                     color: var(--color-black);
                     font-weight: var(--font-weight-medium);
+                    transition: all ease-in-out .3s;
+
+                    &:hover {
+                        color: var(--color-bg);
+                    }
                 }
             }
         }

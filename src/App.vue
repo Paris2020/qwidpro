@@ -26,19 +26,19 @@
                     id: 0,
                     label: "Website 1",
                     thumbnail: "project_01",
-                    link: "project_name"
+                    link: "project_name.co.za"
                 },
                 {
                     id: 1,
                     label: "Website 2",
                     thumbnail: "project_01",
-                    link: "project_name"
+                    link: "project_name.com"
                 },
                 {
                     id: 2,
                     label: "Website 3",
                     thumbnail: "project_01",
-                    link: "project_name"
+                    link: "project_name.co.za"
                 },
             ],
             bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum." +
