@@ -1,0 +1,30 @@
+.portfolio {
+    background-color: var(--color-white);
+    border-radius: 3rem;
+    box-shadow: 0 0.4rem 1.6rem #0000001f;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    picture {
+        img {
+            height: 30rem;
+            object-fit: cover;
+        }
+    }
+
+    .label {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-black);
+        background-color: var(--color-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

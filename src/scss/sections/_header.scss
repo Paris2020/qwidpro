@@ -1,18 +1,16 @@
 .header-banner {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    //min-height: 40rem;
-    border-radius: 4rem;
     margin-top: 1rem;
+    min-height: 40rem;
 
     picture {
-        height: 30rem;
-
         img {
             height: 30rem;
             border-radius: 4rem;
+            object-fit: cover; 
         }
     }
 }
@@ -20,10 +18,13 @@
 .header-content {
     padding: 1rem 0;
     max-width: 140rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
     .actions {
         width: 40rem;
-        margin: -7rem auto;
+        margin: -14rem auto;
         display: flex;
         align-items: center;
         justify-content: space-between;

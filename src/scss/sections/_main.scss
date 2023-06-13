@@ -1,14 +1,42 @@
 .content {
-    margin-top: 7rem;
-
+    margin-top: 14rem;
     .wrapper {
-        
         section {
-            padding: 2rem 0;
-            border-bottom: .2rem solid var(--color-white);
+            padding: 4rem 0;
+            border-bottom: .1rem solid var(--color-white);
 
             &:last-child {
                 border-bottom: none;
+            }
+
+            &.projects {
+                display: flex;
+                flex-direction: column;
+
+                .wrap {
+                    display: grid;
+                    gap: 2rem;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: repeat(3, 30rem);
+                    
+                }
+            }
+
+            &.experience {
+                display: flex;
+                justify-content: space-between;
+
+                .details.bio {
+                    width: 39%;
+                }
+
+                .wrap {
+                    width: 60%;
+                    display: grid;
+                    gap: 1.5rem;
+                    grid-template-columns: 1fr;
+                }
             }
         }
     }

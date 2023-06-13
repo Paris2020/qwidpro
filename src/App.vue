@@ -26,36 +26,33 @@
                     id: 0,
                     label: "Website 1",
                     thumbnail: "project_01",
-                    link: "https://"
+                    link: "project_name"
                 },
                 {
                     id: 1,
                     label: "Website 2",
-                    thumbnail: "project_02",
-                    link: "https://"
+                    thumbnail: "project_01",
+                    link: "project_name"
                 },
                 {
                     id: 2,
                     label: "Website 3",
-                    thumbnail: "project_03",
-                    link: "https://"
+                    thumbnail: "project_01",
+                    link: "project_name"
                 },
             ],
+            bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum." +
+                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             moreDetails: [
                 {
-                  id: 0,
-                  title: "Bio",
-                  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
-                },
-                {
-                    id: 1,
+                    id: 0,
                     title: "Experience",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+                    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                  id: 2,
+                  id: 1,
                   title: "Experience",
-                  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+                  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 }
             ]
         },
@@ -122,9 +119,9 @@
                 <!-- END. Profile Card -->
 
                 <div class="actions">
-                    <a class="btn small clear">Send An Offer</a>
-                    <a class="btn small clear">Message</a>
-                    <a class="btn small clear">Share</a>
+                    <a class="btn small clear" href="#">Send An Offer</a>
+                    <a class="btn small clear" href="#">Message</a>
+                    <a class="btn small clear" href="#">Share</a>
                 </div>
                 <!-- END.Action buttons -->
             </div>
@@ -133,8 +130,7 @@
 
         <main class="content">
             <div class="wrapper">
-                <section class="portfolio">
-                    <h3>Portfolio</h3>
+                <section class="projects">
                     <div class="wrap">
                         <portfolio-card :portfolio="state.profile.portfolio"></portfolio-card>
                     </div>
@@ -142,14 +138,21 @@
                 <!-- END. Portfolio Section -->
 
                 <section class="experience">
-                    <h3>Experience</h3>
+                    <div class="details bio">
+                        <dl>
+                            <dt>Bio</dt>
+                            <dd>{{ state.profile.bio }}</dd>
+                        </dl>
+                    </div>
+
                     <div class="wrap">
-                        <details-card></details-card>
+                        <details-card :moreDetails="state.profile.moreDetails"></details-card>
                     </div>
                 </section>
                 <!-- END. Experience Section -->
             </div>
         </main>
+        <!-- END. Main Section -->
       
         <footer-section></footer-section>
   </div>
