@@ -1,18 +1,18 @@
 <script setup>
-  import { reactive } from "vue";
-  import { useStore } from 'vuex';
+    import { reactive, onMounted, computed } from "vue";
+    import { useStore } from 'vuex';
 
-  import IconSymbols from "./components/global/IconSymbols.vue";
-  import NavSection from "./components/sections/NavSection.vue";
-  import BannerSection from "./components/sections/BannerSection.vue";
-  import ProfileCard from "./components/global/ProfileCard.vue";
-  import DetailsCard from "./components/global/DetailsCard.vue";
-  import PortfolioCard from "./components/global/PortfolioCard.vue";
-  import FooterSection from "./components/sections/FooterSection.vue";
+    import IconSymbols from "./components/global/IconSymbols.vue";
+    import NavSection from "./components/sections/NavSection.vue";
+    import BannerSection from "./components/sections/BannerSection.vue";
+    import ProfileCard from "./components/global/ProfileCard.vue";
+    import DetailsCard from "./components/global/DetailsCard.vue";
+    import PortfolioCard from "./components/global/PortfolioCard.vue";
+    import FooterSection from "./components/sections/FooterSection.vue";
 
-  const store = useStore();
+    const store = useStore();
 
-  const state = reactive({
+    const state = reactive({
         profile: {
             id: 0,
             profileDetails: {
@@ -60,9 +60,17 @@
                 }
             ]
         },
-        /* Will be mioved to separate file */
-        
-    })
+    });
+
+    // COMPUTED PROPERTIES
+    const profiles = computed(() => {
+        return store.state.profiles;
+    });
+
+    onMounted (()=> {
+        /* in order to maintain reactivity we cannot do it this way */
+        //console.log(store.state.profiles);
+    });
 </script>
 
 <template>

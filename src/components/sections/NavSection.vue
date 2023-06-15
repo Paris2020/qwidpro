@@ -1,6 +1,5 @@
 <script setup>
-    import InputField from "../global/InputField.vue";
-    import Icon from "../global/Icon.vue";
+    import SearchBox from "../global/SearchBox.vue";
 </script>
 
 <template>
@@ -13,8 +12,7 @@
 
             <!-- SearchBox -->
             <div class="search-box">
-                <icon name="search"></icon>
-                <input-field label="Search Talent"></input-field>
+                <search-box ></search-box>
             </div>
 
             <ul class="menu">

@@ -7,6 +7,10 @@ const store = createStore({
     /* state, actions, mutations */
 
     state: {
+        searchWords: false,
+        hasResults: false,
+        shouldShowResults: false,
+        profile: {},
         profiles: [
             {
                 id: 0,
@@ -150,7 +154,32 @@ const store = createStore({
                 ]
             }
         ]
+    },
+
+    getters: {
+        searchWords: state => state.searchWords,
+        hasResults: state => state.hasResults,
+        shouldShowResults: state => state.shouldShowResults,
+    },
+
+    mutations: {
+        setPhrases(state, phrase) {
+            state.searchWords = phrase
+        },
+        hasResults(state, hasResults) {
+            state.hasResults = hasResults
+        },
+        shouldShowResults(state, showResults) {
+            state.shouldShowResults = showResults
+        },
+    },
+
+    actions: {
+        getSearchPhrases({commit}, data) {
+            
+        }
     }
+    
 });
 
 
