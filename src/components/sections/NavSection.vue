@@ -16,11 +16,11 @@
             </div>
 
             <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/messages">Messages</a></li>
-                <li><a href="/notification">Notification</a></li>
-                <li><a href="/post-projects">Post Project</a></li>
+                <li><router-link :to="{name: 'home'}">Home</router-link></li>
+                <li><router-link to="/projects">Projects</router-link></li>
+                <li><router-link to="/messages">Messages</router-link></li>
+                <li><router-link to="/notification">Notification</router-link></li>
+                <li><router-link to="/post-projects">Post Project</router-link></li>
             </ul>
         </div>
     </nav>

@@ -16,6 +16,7 @@
     "sass-loader": "^13.3.2",
     "vue": "^3.2.13",
     "vue-eslint-parser": "^9.3.1",
+    "vue-router": "^4.2.2",
     "vue-template-compiler": "^2.7.14",
     "vuex": "^4.0.2"
   },
